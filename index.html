@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <div id="wrapper1">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden" />
+            <label for="nav" class="nav-btn">
+              <i></i>
+              <i></i>
+              <i></i>
+            </label>
+            <div class="logo">
+              
+            </div>
+            <div class="nav-wrapper" id="menu">
+              <ul>
+                <li><a href="#" id="aboutbtn">Home</a></li>
+                <li><a href="#" id="offerbtn">O nas</a></li>
+                <li><a href="#" id="portfoliobtn">Oferta</a></li>
+                <li><a href="#" id="portfoliobtn">Galeria</a></li>
+                <li><a href="#" id="contactbtn">Kontakt</a></li>
+              </ul>
+            </div>
+          </nav>
+        <div id="w1content">
+            <h1 id="trigger">Najlepsza <a> szkoła<br> muzyczna</a>!</h1>
+            <h2>Idź przez życie z własnym rytmem i wspaniałą melodią
+                już od najmłodszych lat! Poznaj nas bliżej i pozwól
+                porwać się muzyce!</h2>
+                <div class="w1buttons"></div>
+        </div>
+        <div id="arrowup">
+            <img src="./img/icons/arrowup.png" alt="">
+        </div>
+    </div>
+    <div class="wrapper2">
+        <div id="w2content">
+            <div class="w2box">
+                <div class="counter" data-target="700000">0</div>
+                <h3>Uczniów</h3>
+            </div>
+            <div class="w2box">
+                <div class="counter" data-target="5000000">0</div>
+                <h3>Absolwentów</h3>
+            </div>
+            <div class="w2box">
+                <div class="counter" data-target="20000">0</div>
+                <h3>Nauczycieli</h3>
+            </div>
+            <div class="w2box">
+                <div class="counter" data-target="6000">0</div>
+                <h3>Placówek</h3>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper3">
+        <h1>W naszej ofercie znajdują się zarówno grupy <a>początkujące</a>, jak i 
+            <a>zaawansowane</a>.  Dodatkowo możemy wybierać między nauką <a>grupową</a> bądź 
+            <a>indywidualną</a> .
+            Każdy znajdzie coś dla siebie!</h1>
+
+            <div class="w3container">
+                <div class="w3box">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/baby1.svg" alt="">
+                        </div>
+                    <h3>Niemowlaki w krainie dźwięków</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>
+                <div class="w3box"id="b2">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/baby2.svg" alt="">
+                        </div>
+                    <h3>Szkraby i muzyka (od 18 m-ca)</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>
+                <div class="w3box"id="b3">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/baby3.svg" alt="">
+                        </div>
+                    <h3>Junior music course (od 4 lat)</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>
+                <div class="w3box">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/guitar1.svg" alt="">
+                        </div>
+                    <h3>Gitara klasyczna / elektryczna</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>
+                <div class="w3box"id="b2">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/guitar2.svg" alt="">
+                        </div>
+                    <h3>Gitara basowa</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>
+                <div class="w3box"id="b3">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/piano.svg" alt="">
+                        </div>
+                    <h3>Keyboard</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>   
+                <div class="w3box">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/drums.svg" alt="">
+                        </div>
+                    <h3>Perkusja</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>
+                <div class="w3box"id="b2">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/ukulele.svg" alt="">
+                        </div>
+                    <h3>Ukulele</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>
+                <div class="w3box"id="b3">
+                    <div class="w3content">
+                        <div class="w3icon">
+                            <img src="img/icons/microphone.svg" alt="">
+                        </div>
+                    <h3>Wokal</h3>
+                    </div>
+                    <div class="w3bar"></div>
+                </div>  
+            </div>
+            <h2>Kliknij i przeczytaj więcej o naszych metodach nauczania!</h2>
+            <div class="w3button">
+                <a href="http://"><div class="w3btn"> Zobacz</div></a>
+            </div>
+        </div>
+        <div class="wrapper4">
+            <h1>Opinie naszych uczniów</h1>
+            <div class="w4container">
+                <div class="w4arrow1" onclick="minus()"></div>
+                <div class="w4spacer1"></div>
+                <div class="w4section">
+                    <div class="w4content">
+                        <div class="w4box">
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                In pellentesque iaculis orci, in blandit arcu maximus sit amet. 
+                                Etiam lacus tellus, egestas eget aliquet semper, condimentum sed 
+                                lorem. Proin suscipit pulvinar velit id sagittis."
+                            </p>
+                            <h3>~ Katarzyna</h3>
+                        </div>
+                        <div class="w4box">
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                In pellentesque iaculis orci, in blandit arcu maximus sit amet. 
+                                Etiam lacus tellus, egestas eget aliquet semper, condimentum sed 
+                                lorem."
+                            </p>
+                            <h3>~ Julia</h3>
+                        </div>
+                        <div class="w4box">
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                In pellentesque iaculis orci, in blandit arcu maximus sit amet. 
+                                Etiam lacus tellus, egestas eget aliquet semper, condimentum sed 
+                                lorem."
+                            </p>
+                            <h3>~ Anna</h3>
+                        </div>
+                        <div class="w4box">
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                In pellentesque iaculis orci, in blandit arcu maximus sit amet. 
+                                Etiam lacus tellus, egestas eget aliquet semper, condimentum sed 
+                                lorem. Proin suscipit pulvinar velit id sagittis."
+                            </p>
+                            <h3>~ Joanna</h3>
+                        </div>
+                        <div class="w4box">
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                In pellentesque iaculis orci, in blandit arcu maximus sit amet. 
+                                Etiam lacus tellus, egestas eget aliquet semper, condimentum sed 
+                                lorem. Proin suscipit pulvinar velit id sagittis."
+                            </p>
+                            <h3>~ Kamil</h3>
+                        </div>
+                        <div class="w4box">
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                In pellentesque iaculis orci, in blandit arcu maximus sit amet. 
+                                Etiam lacus tellus, egestas eget aliquet semper, condimentum sed 
+                                lorem."
+                            </p>
+                            <h3>~Rafał</h3>
+                        </div>
+                    </div>
+                    <div class="w4dots">
+                        <div class="dot" id="dot1"></div>
+                        <div class="dot" id="dot2"></div>
+                        <div class="dot" id="dot3"></div>
+                    </div>
+                </div>
+                <div class="w4arrow2" onclick="plus()"></div>
+                <div class="w4spacer2"></div>
+            </div>            
+        </div>
+        <div class="wrapper5">
+            <div class="w5content">
+                <h1><a>YAMAHA</a> Szkoła Muzyczna</h1>
+                <div class="w5container">
+                    <div class="box">
+                        <h2><a>Adres 1</a>(Smoczka):</h2><br>
+                        <h3>ul. Wolności 146A/2<br>
+                            39-300 Mielec</h3>
+                    </div>
+                    <div class="box">
+                        <h2><a>Adres 2</a>(Osiedle):</h2><br>
+                        <h3>Al. Niepodległości 14/42<br>
+                            39-300 Mielec</h3>
+                    </div>
+                    <div class="box">
+                        <h2><a>Telefon</a>:</h2><br>
+                        <h3><a href="tel:+48530740070">530 740 070</a></h3>
+                    </div>
+                    <div class="box">
+                        <h2><a>E-mail</a>:</h2><br>
+                        <h3>yamahamielec@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="w5socials">
+                <h2>Odwiedź nas!</h2>
+                <div class="w5socialbar">
+                    <div class="w5icon">
+                        <a href="#"><img src="img/icons/facebook.png" alt=""></a>
+                    </div>
+                    <div class="w5icon">
+                        <a href="#"><img src="img/icons/instagram.png" alt=""></a>
+                    </div>
+                    <div class="w5icon">
+                       <a href="#"><img src="img/icons/youtube.png" alt=""></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper6">
+            <h2>Created by <a href="#">SPP_WEB</a></h2>
+        </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
