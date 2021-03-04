@@ -36,19 +36,13 @@ a{
 
 /*Navigation*/
 nav {
-  height: 14%;
+  height: 5vmax;
   z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 nav ul {
   float: right;
-}
-
-#menu {
-  flex: auto;
+  margin-top: 2vmax;
 }
 
 nav ul li {
@@ -56,11 +50,11 @@ nav ul li {
 }
 
 nav ul li:not(:first-child) {
-  margin-left: 3.5vmax;
+  margin-left: 3vmax;
 }
 
 nav ul li:last-child a {
-  margin-right: 3vmax;
+  margin-right: 4vmax;
   color: $maincolor;
 }
 
@@ -70,7 +64,8 @@ nav ul li a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.4vmax;
+  font-size: 1.3vmax;
+  letter-spacing: 0.1vmax;
   font-weight: 400;
 }
 
@@ -117,11 +112,15 @@ nav ul li a {
 }
 
 .logo {
-  height: 3vmax;
-  width: 16vmax;
+  position: relative;
+  top: 50%;
+  margin-top: -2vmax;
   float: left;
-  margin-left: 7%;
-  background-color: beige;
+  margin-left: 3vmax;
+  height: 4vmax;
+  width: 20vmax;
+  z-index: 9990;
+  background: chartreuse;
 }
 
 /*Content of landing page*/
@@ -133,7 +132,6 @@ nav ul li a {
   background-size: cover;
   #w1content {
     width: 50%;
-    height: 30vmax;
     margin-left: 15%;
     margin-top: 6vmax;
     /*Title*/
@@ -204,10 +202,9 @@ nav ul li a {
     width: 90%;
     height: 8vmax;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     .w2box {
-      width: 20%;
       height: 8vmax;
       display: flex;
       flex-direction: column;
@@ -541,19 +538,25 @@ nav ul li a {
 
 @media screen and (orientation: portrait) {
   nav {
-    background-color: antiquewhite;
+    background-color: green;
+    height: 10vmax;
   }
   .nav-wrapper {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     z-index: -1;
+    text-align: center;
     background-color: white;
     border-left: 3px solid black;
     opacity: 0;
     transition: all 0.2s ease;
+  }.logo{
+    height: 7vmax;
+    margin-top: -3.5vmax;
+    width: 22vmax;
   }
   .nav-wrapper ul {
     position: absolute;
@@ -561,32 +564,18 @@ nav ul li a {
     transform: translateY(-50%);
     width: 100%;
   }
-
   .nav-wrapper ul li {
     display: block;
     float: none;
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin-bottom: 1vmax;
-  }
-  .nav-wrapper ul li:nth-child(1) a {
-    transition-delay: 0.2s;
   }
   nav ul li:last-child a {
     margin-right: 0;
-    color: #27ae60;
+    color: $maincolor;
   }
 
-  .nav-wrapper ul li:nth-child(2) a {
-    transition-delay: 0.3s;
-  }
-
-  .nav-wrapper ul li:nth-child(3) a {
-    transition-delay: 0.4s;
-  }
-  .nav-wrapper ul li:nth-child(4) a {
-    transition-delay: 0.5s;
-  }
   .nav-wrapper ul li:not(:first-child) {
     margin-left: 0;
   }
@@ -596,7 +585,7 @@ nav ul li a {
     color: black;
     font-size: 2vmax;
     letter-spacing: 1.2px;
-    transform: translateX(-20px);
+    transform: translateX(-50px);
     transition: all 0.2s ease;
   }
   .nav-btn {
@@ -631,5 +620,51 @@ nav ul li a {
 
   .nav-btn i:nth-child(3) {
     margin-top: 4px;
+  }
+  #wrapper1{
+    #w1content{
+      width: 90%;
+      margin: 15% auto 0%;
+      h1{
+        font-size: 10vmax;
+        line-height: 10vmax;
+        text-align: center;
+      }
+      h2{
+        width: 80%;
+        font-size: 2.5vmax;
+        margin: 10% auto;
+        text-align: center;
+      }
+      .w1buttons{
+        width: 60%;
+        height: 6vmax;
+        margin: 10% auto;
+      }  
+  } 
+  #arrowup {
+    width: 6vmax;
+    height: 6vmax;
+    img {
+      width: 2.4vmax;
+      height: 2.4vmax;
+    }
+  }
+  }
+  .wrapper2 {
+    height: 32vmax;
+    background: linear-gradient(-3deg, $maincolor 15%, rgba(0, 0, 0, 0) 15.7%);
+    background: yellowgreen;
+    #w2content{
+      width: 90%;
+      grid-template-columns: 1fr 1fr;
+      
+      .w2box{
+        height: 12vmax;
+        .counter {
+          font-size: 3.5vmax;
+        }
+      }
+    }
   }
 }

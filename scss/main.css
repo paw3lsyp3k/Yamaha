@@ -37,26 +37,13 @@ a {
 */
 /*Navigation*/
 nav {
-  height: 14%;
+  height: 5vmax;
   z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 nav ul {
   float: right;
-}
-
-#menu {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  margin-top: 2vmax;
 }
 
 nav ul li {
@@ -64,11 +51,11 @@ nav ul li {
 }
 
 nav ul li:not(:first-child) {
-  margin-left: 3.5vmax;
+  margin-left: 3vmax;
 }
 
 nav ul li:last-child a {
-  margin-right: 3vmax;
+  margin-right: 4vmax;
   color: #9c88ff;
 }
 
@@ -78,7 +65,8 @@ nav ul li a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.4vmax;
+  font-size: 1.3vmax;
+  letter-spacing: 0.1vmax;
   font-weight: 400;
 }
 
@@ -132,11 +120,15 @@ nav ul li a {
 }
 
 .logo {
-  height: 3vmax;
-  width: 16vmax;
+  position: relative;
+  top: 50%;
+  margin-top: -2vmax;
   float: left;
-  margin-left: 7%;
-  background-color: beige;
+  margin-left: 3vmax;
+  height: 4vmax;
+  width: 20vmax;
+  z-index: 9990;
+  background: chartreuse;
 }
 
 /*Content of landing page*/
@@ -151,7 +143,6 @@ nav ul li a {
 
 #wrapper1 #w1content {
   width: 50%;
-  height: 30vmax;
   margin-left: 15%;
   margin-top: 6vmax;
   /*Title*/
@@ -232,15 +223,13 @@ nav ul li a {
   width: 90%;
   height: 8vmax;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .wrapper2 #w2content .w2box {
-  width: 20%;
   height: 8vmax;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,20 +648,27 @@ nav ul li a {
 */
 @media screen and (orientation: portrait) {
   nav {
-    background-color: antiquewhite;
+    background-color: green;
+    height: 10vmax;
   }
   .nav-wrapper {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     z-index: -1;
+    text-align: center;
     background-color: white;
     border-left: 3px solid black;
     opacity: 0;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+  }
+  .logo {
+    height: 7vmax;
+    margin-top: -3.5vmax;
+    width: 22vmax;
   }
   .nav-wrapper ul {
     position: absolute;
@@ -685,28 +681,12 @@ nav ul li a {
     display: block;
     float: none;
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin-bottom: 1vmax;
-  }
-  .nav-wrapper ul li:nth-child(1) a {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
   }
   nav ul li:last-child a {
     margin-right: 0;
-    color: #27ae60;
-  }
-  .nav-wrapper ul li:nth-child(2) a {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-  }
-  .nav-wrapper ul li:nth-child(3) a {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
-  }
-  .nav-wrapper ul li:nth-child(4) a {
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    color: #9c88ff;
   }
   .nav-wrapper ul li:not(:first-child) {
     margin-left: 0;
@@ -717,8 +697,8 @@ nav ul li a {
     color: black;
     font-size: 2vmax;
     letter-spacing: 1.2px;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
@@ -752,6 +732,50 @@ nav ul li a {
   }
   .nav-btn i:nth-child(3) {
     margin-top: 4px;
+  }
+  #wrapper1 #w1content {
+    width: 90%;
+    margin: 15% auto 0%;
+  }
+  #wrapper1 #w1content h1 {
+    font-size: 10vmax;
+    line-height: 10vmax;
+    text-align: center;
+  }
+  #wrapper1 #w1content h2 {
+    width: 80%;
+    font-size: 2.5vmax;
+    margin: 10% auto;
+    text-align: center;
+  }
+  #wrapper1 #w1content .w1buttons {
+    width: 60%;
+    height: 6vmax;
+    margin: 10% auto;
+  }
+  #wrapper1 #arrowup {
+    width: 6vmax;
+    height: 6vmax;
+  }
+  #wrapper1 #arrowup img {
+    width: 2.4vmax;
+    height: 2.4vmax;
+  }
+  .wrapper2 {
+    height: 32vmax;
+    background: linear-gradient(-3deg, #9c88ff 15%, rgba(0, 0, 0, 0) 15.7%);
+    background: yellowgreen;
+  }
+  .wrapper2 #w2content {
+    width: 90%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .wrapper2 #w2content .w2box {
+    height: 12vmax;
+  }
+  .wrapper2 #w2content .w2box .counter {
+    font-size: 3.5vmax;
   }
 }
 /*# sourceMappingURL=main.css.map */
