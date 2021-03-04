@@ -1,3 +1,5 @@
+$maincolor: #9c88ff;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,34 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* MENU */
+h1{
+  font-weight: 600;
+}
+h2{
+  font-weight: 400;
+}
+h3{
+  font-weight: 300;
+}
+a{
+  color: $maincolor;
+}
+
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **LANDING PAGE**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
+
+/*Navigation*/
 nav {
   height: 14%;
   z-index: 9999;
@@ -32,7 +61,7 @@ nav ul li:not(:first-child) {
 
 nav ul li:last-child a {
   margin-right: 3vmax;
-  color: #9c88ff;
+  color: $maincolor;
 }
 
 nav ul li a {
@@ -95,6 +124,7 @@ nav ul li a {
   background-color: beige;
 }
 
+/*Content of landing page*/
 #wrapper1 {
   width: 100%;
   height: 100vh;
@@ -106,20 +136,19 @@ nav ul li a {
     height: 30vmax;
     margin-left: 15%;
     margin-top: 6vmax;
+    /*Title*/
     h1 {
       font-size: 5vmax;
       line-height: 6vmax;
       color: white;
-      a {
-        color: #9c88ff;
-      }
     }
+    /*Description*/
     h2 {
       width: 60%;
       margin-top: 5%;
-      font-weight: 400;
       color: white;
     }
+    /*Call to action*/
     .w1buttons {
       width: 25vmax;
       height: 4vmax;
@@ -127,6 +156,7 @@ nav ul li a {
       background-color: tan;
     }
   }
+  /*go up button */
   #arrowup {
     width: 3vmax;
     height: 3vmax;
@@ -150,12 +180,26 @@ nav ul li a {
     }
   }
 }
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **Wrapper 2/Counter**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/ 
+
+
 .wrapper2 {
   width: 100%;
   height: 16vmax;
-  background: linear-gradient(-3deg, #9c88ff 25%, rgba(0, 0, 0, 0) 25.3%);
+  background: linear-gradient(-3deg, $maincolor 25%, rgba(0, 0, 0, 0) 25.3%);
   padding-top: 1vmax;
-
   #w2content {
     width: 90%;
     height: 8vmax;
@@ -179,21 +223,31 @@ nav ul li a {
     }
   }
 }
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
 
+    **Wrapper 3**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/ 
 .wrapper3 {
   width: 100%;
   padding-bottom: 10vmax;
   background: linear-gradient(-2deg, #292929 4%, rgba(0, 0, 0, 0) 4.1%);
+   /*title*/
   h1 {
     text-align: center;
     margin: 8vmax auto;
     width: 60%;
     font-size: 1.6vmax;
-    font-weight: 500;
-    a {
-      color: #9c88ff;
-    }
   }
+   /*container for content*/
   .w3container {
     width: 50%;
     margin: 7vmax auto;
@@ -201,13 +255,14 @@ nav ul li a {
     display: grid;
     grid-gap: 5vmax;
     grid-template-columns: repeat(3, 1fr);
+     /*single box with icon*/
     .w3box {
       width: 100%;
       height: 12vmax;
       .w3content {
         width: 100%;
         height: 98%;
-        
+        /*icon*/  
         .w3icon {
           width: 4vmax;
           height: 7vmax;
@@ -217,59 +272,69 @@ nav ul li a {
             height: 100%;
           }
         }
+        /*card title*/  
         h3 {
-          font-weight: 400;
           width: 80%;
           text-align: center;
           margin: 1vmax auto;
           font-size: 1.1vmax;
         }
       }
+      /*bottom bar*/  
       .w3bar {
         width: 100%;
         height: 2%;
-        background-color: #9c88ff;
+        background-color: $maincolor;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
       }
     }
   }
+  /*Call to action */  
   h2 {
     width: 45%;
     margin: auto;
-    font-weight: 500;
     font-size: 2vmax;
     text-align: center;
   }
-  .w3button,
-  .w3btn {
+  .w3button {
+    background-color: $maincolor;
     width: 12vmax;
-    height: 3vmax;
-    background-color: #9c88ff;
     margin: 2vmax auto;
     border-radius: 50px;
-    a {
-      text-decoration: none;
-      color: white;
-      font-size: 1.2vmax;
-    }
-  }
-  .w3btn {
-    margin: auto;
-    text-align: center;
-    line-height: 3vmax;
+    padding: 1vmax 2vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.1vmax;
+    cursor: pointer;
   }
 }
 
+
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **Wrapper 4**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 .wrapper4 {
   width: 100%;
   height: 40vmax;
-  background: linear-gradient(-2deg, #9c88ff 13%, rgba(0, 0, 0, 0) 13.2%);
+  background: linear-gradient(-2deg, $maincolor 13%, rgba(0, 0, 0, 0) 13.2%);
   background-color: #292929;
   padding-top: 2vmax;
+   /*title */  
   h1 {
     text-align: center;
-    font-weight: 600;
     font-size: 2vmax;
     color: white;
   }
@@ -289,6 +354,7 @@ nav ul li a {
     .w4spacer1 {
       display: block;
     }
+     /* Next and prev btn */  
     .w4arrow1,
     .w4arrow2 {
       width: 3vmax;
@@ -302,6 +368,7 @@ nav ul li a {
       display: none;
       transform: rotate(180deg);
     }
+     /*Carousel */  
     .w4section {
       width: 60vmax;
       height: 24vmax;
@@ -315,19 +382,22 @@ nav ul li a {
         .w4box {
           width: 20vmax;
           padding-top: 2vmax;
+           /*Comment */  
           p {
             font-size: 1.1vmax;
             text-align: center;
             color: white;
           }
+          /*author */ 
           h3 {
             text-align: center;
-            color: #9c88ff;
+            color: $maincolor;
             margin-top: 2vmax;
             font-size: 1.4vmax;
           }
         }
       }
+      /* Dots under carousel*/ 
       .w4dots {
         width: 5vmax;
         height: 1vmax;
@@ -342,28 +412,37 @@ nav ul li a {
           cursor: pointer;
         }
         #dot1 {
-          background-color: #9c88ff;
+          background-color: $maincolor;
         }
       }
     }
   }
 }
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
 
+    **Wrapper 5**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 .wrapper5 {
   width: 100%;
   height: 35vmax;
   background-color: white;
+  /* Content*/ 
   .w5content {
     width: 65%;
     height: 100%;
     padding: 5% 0 0 13%;
     float: left;
     h1 {
-      font-weight: 500;
       font-size: 2.5vmax;
-      a {
-        color: #9c88ff;
-      }
     }
     .w5container {
       width: 80%;
@@ -375,14 +454,9 @@ nav ul li a {
       .box {
         width: 100%;
         h2 {
-          font-weight: 500;
           font-size: 1.5vmax;
         }
-        a {
-          color: #9c88ff;
-        }
         h3 {
-          font-weight: 400;
           font-size: 1.1vmax;
           a {
             text-decoration: none;
@@ -392,6 +466,7 @@ nav ul li a {
       }
     }
   }
+  /* Social section */ 
   .w5socials {
     width: 25%;
     height: 100%;
@@ -401,9 +476,8 @@ nav ul li a {
     align-items: center;
     flex-direction: column;
     h2 {
-      font-weight: 500;
       font-size: 1.8vmax;
-      color: #9c88ff;
+      color: $maincolor;
     }
     .w5socialbar {
       margin-top: 2vmax;
@@ -422,23 +496,48 @@ nav ul li a {
     }
   }
 }
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
 
+    **Wrapper 6/ FOOTER**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 .wrapper6 {
   width: 100%;
   height: 3vmax;
-  background-color: #9c88ff;
+  background-color: $maincolor;
   text-align: right;
   padding-right: 10%;
   h2 {
     color: white;
-    font-weight: 400;
     line-height: 3vmax;
     a {
       text-decoration: none;
-      color: #27ae60;
+      color: black;
     }
   }
 }
+
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **RESPO**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 
 @media screen and (orientation: portrait) {
   nav {

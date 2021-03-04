@@ -6,7 +6,36 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* MENU */
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+a {
+  color: #9c88ff;
+}
+
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **LANDING PAGE**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
+/*Navigation*/
 nav {
   height: 14%;
   z-index: 9999;
@@ -110,12 +139,14 @@ nav ul li a {
   background-color: beige;
 }
 
+/*Content of landing page*/
 #wrapper1 {
   width: 100%;
   height: 100vh;
   background-image: url(../img/bg1.jpg);
   background-position: bottom;
   background-size: cover;
+  /*go up button */
 }
 
 #wrapper1 #w1content {
@@ -123,6 +154,9 @@ nav ul li a {
   height: 30vmax;
   margin-left: 15%;
   margin-top: 6vmax;
+  /*Title*/
+  /*Description*/
+  /*Call to action*/
 }
 
 #wrapper1 #w1content h1 {
@@ -131,14 +165,9 @@ nav ul li a {
   color: white;
 }
 
-#wrapper1 #w1content h1 a {
-  color: #9c88ff;
-}
-
 #wrapper1 #w1content h2 {
   width: 60%;
   margin-top: 5%;
-  font-weight: 400;
   color: white;
 }
 
@@ -179,6 +208,19 @@ nav ul li a {
           transform: rotate(270deg);
 }
 
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **Wrapper 2/Counter**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 .wrapper2 {
   width: 100%;
   height: 16vmax;
@@ -224,10 +266,26 @@ nav ul li a {
   font-size: 1.5vmax;
 }
 
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **Wrapper 3**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 .wrapper3 {
   width: 100%;
   padding-bottom: 10vmax;
   background: linear-gradient(-2deg, #292929 4%, rgba(0, 0, 0, 0) 4.1%);
+  /*title*/
+  /*container for content*/
+  /*Call to action */
 }
 
 .wrapper3 h1 {
@@ -235,11 +293,6 @@ nav ul li a {
   margin: 8vmax auto;
   width: 60%;
   font-size: 1.6vmax;
-  font-weight: 500;
-}
-
-.wrapper3 h1 a {
-  color: #9c88ff;
 }
 
 .wrapper3 .w3container {
@@ -252,16 +305,20 @@ nav ul li a {
   grid-gap: 5vmax;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  /*single box with icon*/
 }
 
 .wrapper3 .w3container .w3box {
   width: 100%;
   height: 12vmax;
+  /*bottom bar*/
 }
 
 .wrapper3 .w3container .w3box .w3content {
   width: 100%;
   height: 98%;
+  /*icon*/
+  /*card title*/
 }
 
 .wrapper3 .w3container .w3box .w3content .w3icon {
@@ -276,7 +333,6 @@ nav ul li a {
 }
 
 .wrapper3 .w3container .w3box .w3content h3 {
-  font-weight: 400;
   width: 80%;
   text-align: center;
   margin: 1vmax auto;
@@ -294,44 +350,54 @@ nav ul li a {
 .wrapper3 h2 {
   width: 45%;
   margin: auto;
-  font-weight: 500;
   font-size: 2vmax;
   text-align: center;
 }
 
-.wrapper3 .w3button,
-.wrapper3 .w3btn {
-  width: 12vmax;
-  height: 3vmax;
+.wrapper3 .w3button {
   background-color: #9c88ff;
+  width: 12vmax;
   margin: 2vmax auto;
   border-radius: 50px;
-}
-
-.wrapper3 .w3button a,
-.wrapper3 .w3btn a {
-  text-decoration: none;
+  padding: 1vmax 2vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
-  font-size: 1.2vmax;
+  font-size: 1.1vmax;
+  cursor: pointer;
 }
 
-.wrapper3 .w3btn {
-  margin: auto;
-  text-align: center;
-  line-height: 3vmax;
-}
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
 
+    **Wrapper 4**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 .wrapper4 {
   width: 100%;
   height: 40vmax;
   background: linear-gradient(-2deg, #9c88ff 13%, rgba(0, 0, 0, 0) 13.2%);
   background-color: #292929;
   padding-top: 2vmax;
+  /*title */
 }
 
 .wrapper4 h1 {
   text-align: center;
-  font-weight: 600;
   font-size: 2vmax;
   color: white;
 }
@@ -348,6 +414,8 @@ nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Next and prev btn */
+  /*Carousel */
 }
 
 .wrapper4 .w4container .w4spacer1,
@@ -381,6 +449,7 @@ nav ul li a {
   width: 60vmax;
   height: 24vmax;
   overflow-x: hidden;
+  /* Dots under carousel*/
 }
 
 .wrapper4 .w4container .w4section .w4content {
@@ -398,6 +467,8 @@ nav ul li a {
 .wrapper4 .w4container .w4section .w4content .w4box {
   width: 20vmax;
   padding-top: 2vmax;
+  /*Comment */
+  /*author */
 }
 
 .wrapper4 .w4container .w4section .w4content .w4box p {
@@ -436,10 +507,25 @@ nav ul li a {
   background-color: #9c88ff;
 }
 
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **Wrapper 5**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 .wrapper5 {
   width: 100%;
   height: 35vmax;
   background-color: white;
+  /* Content*/
+  /* Social section */
 }
 
 .wrapper5 .w5content {
@@ -450,12 +536,7 @@ nav ul li a {
 }
 
 .wrapper5 .w5content h1 {
-  font-weight: 500;
   font-size: 2.5vmax;
-}
-
-.wrapper5 .w5content h1 a {
-  color: #9c88ff;
 }
 
 .wrapper5 .w5content .w5container {
@@ -475,16 +556,10 @@ nav ul li a {
 }
 
 .wrapper5 .w5content .w5container .box h2 {
-  font-weight: 500;
   font-size: 1.5vmax;
 }
 
-.wrapper5 .w5content .w5container .box a {
-  color: #9c88ff;
-}
-
 .wrapper5 .w5content .w5container .box h3 {
-  font-weight: 400;
   font-size: 1.1vmax;
 }
 
@@ -513,7 +588,6 @@ nav ul li a {
 }
 
 .wrapper5 .w5socials h2 {
-  font-weight: 500;
   font-size: 1.8vmax;
   color: #9c88ff;
 }
@@ -539,6 +613,19 @@ nav ul li a {
   height: 100%;
 }
 
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **Wrapper 6/ FOOTER**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 .wrapper6 {
   width: 100%;
   height: 3vmax;
@@ -549,15 +636,27 @@ nav ul li a {
 
 .wrapper6 h2 {
   color: white;
-  font-weight: 400;
   line-height: 3vmax;
 }
 
 .wrapper6 h2 a {
   text-decoration: none;
-  color: #27ae60;
+  color: black;
 }
 
+/* 
+!--------------------------------
+!--------------------------------
+?--------------------------------
+?--------------------------------
+
+    **RESPO**
+
+?--------------------------------
+?--------------------------------
+!--------------------------------
+!--------------------------------
+*/
 @media screen and (orientation: portrait) {
   nav {
     background-color: antiquewhite;

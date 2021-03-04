@@ -15,7 +15,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
 </head>
 <body>
+    <!--
+
+        ***LANDINGPAGE***
+
+    -->
     <div id="wrapper1">
+        <!--Navigation and logo-->
         <nav>
             <input type="checkbox" id="nav" class="hidden" />
             <label for="nav" class="nav-btn">
@@ -23,9 +29,7 @@
               <i></i>
               <i></i>
             </label>
-            <div class="logo">
-              
-            </div>
+            <div class="logo"></div>
             <div class="nav-wrapper" id="menu">
               <ul>
                 <li><a href="#" id="aboutbtn">Home</a></li>
@@ -36,44 +40,64 @@
               </ul>
             </div>
           </nav>
+        <!--Landing page title and description-->
         <div id="w1content">
             <h1 id="trigger">Najlepsza <a> szkoła<br> muzyczna</a>!</h1>
             <h2>Idź przez życie z własnym rytmem i wspaniałą melodią
                 już od najmłodszych lat! Poznaj nas bliżej i pozwól
                 porwać się muzyce!</h2>
-                <div class="w1buttons"></div>
+            <!--Call to action-->
+            <div class="w1buttons"></div>
         </div>
+        <!--"Go-up" button-->
         <div id="arrowup">
             <img src="./img/icons/arrowup.png" alt="">
         </div>
     </div>
+    <!--
+
+        ***WRAPPER2/COUNTER***
+
+    -->
     <div class="wrapper2">
+        <!--container for counter-->
         <div id="w2content">
+            <!-- Stat 1-->
             <div class="w2box">
                 <div class="counter" data-target="700000">0</div>
                 <h3>Uczniów</h3>
             </div>
+            <!-- Stat 2-->
             <div class="w2box">
                 <div class="counter" data-target="5000000">0</div>
                 <h3>Absolwentów</h3>
             </div>
+            <!-- Stat 3-->
             <div class="w2box">
                 <div class="counter" data-target="20000">0</div>
                 <h3>Nauczycieli</h3>
             </div>
+            <!-- Stat 4-->
             <div class="w2box">
                 <div class="counter" data-target="6000">0</div>
                 <h3>Placówek</h3>
             </div>
         </div>
     </div>
+    <!--
+
+        ***WRAPPER3/LIST***
+
+    -->
     <div class="wrapper3">
+        <!-- Title-->
         <h1>W naszej ofercie znajdują się zarówno grupy <a>początkujące</a>, jak i 
             <a>zaawansowane</a>.  Dodatkowo możemy wybierać między nauką <a>grupową</a> bądź 
             <a>indywidualną</a> .
             Każdy znajdzie coś dla siebie!</h1>
-
+            <!-- Container with all lessons types-->
             <div class="w3container">
+                <!-- Box 1-->
                 <div class="w3box">
                     <div class="w3content">
                         <div class="w3icon">
@@ -83,6 +107,7 @@
                     </div>
                     <div class="w3bar"></div>
                 </div>
+                <!-- Box 2-->
                 <div class="w3box"id="b2">
                     <div class="w3content">
                         <div class="w3icon">
@@ -92,6 +117,7 @@
                     </div>
                     <div class="w3bar"></div>
                 </div>
+                <!-- Box 3-->
                 <div class="w3box"id="b3">
                     <div class="w3content">
                         <div class="w3icon">
@@ -101,6 +127,7 @@
                     </div>
                     <div class="w3bar"></div>
                 </div>
+                <!-- Box 4-->
                 <div class="w3box">
                     <div class="w3content">
                         <div class="w3icon">
@@ -110,6 +137,7 @@
                     </div>
                     <div class="w3bar"></div>
                 </div>
+                <!-- Box 5-->
                 <div class="w3box"id="b2">
                     <div class="w3content">
                         <div class="w3icon">
@@ -119,6 +147,7 @@
                     </div>
                     <div class="w3bar"></div>
                 </div>
+                <!-- Box 6-->
                 <div class="w3box"id="b3">
                     <div class="w3content">
                         <div class="w3icon">
@@ -128,6 +157,7 @@
                     </div>
                     <div class="w3bar"></div>
                 </div>   
+                <!-- Box 7-->
                 <div class="w3box">
                     <div class="w3content">
                         <div class="w3icon">
@@ -137,6 +167,7 @@
                     </div>
                     <div class="w3bar"></div>
                 </div>
+                <!-- Box 8-->
                 <div class="w3box"id="b2">
                     <div class="w3content">
                         <div class="w3icon">
@@ -146,6 +177,7 @@
                     </div>
                     <div class="w3bar"></div>
                 </div>
+                <!-- Box 9-->
                 <div class="w3box"id="b3">
                     <div class="w3content">
                         <div class="w3icon">
@@ -156,18 +188,27 @@
                     <div class="w3bar"></div>
                 </div>  
             </div>
+            <!-- Read more&call to action-->
             <h2>Kliknij i przeczytaj więcej o naszych metodach nauczania!</h2>
-            <div class="w3button">
-                <a href="http://"><div class="w3btn"> Zobacz</div></a>
+            <div class="w3button" onclick="location.href='teaching.html';">
+                Zobacz
             </div>
         </div>
+        <!--
+
+        ***WRAPPER4/Testimonials***
+
+    -->
         <div class="wrapper4">
+            <!-- title-->
             <h1>Opinie naszych uczniów</h1>
+            <!-- Contaier for content-->
             <div class="w4container">
                 <div class="w4arrow1" onclick="minus()"></div>
                 <div class="w4spacer1"></div>
                 <div class="w4section">
                     <div class="w4content">
+                        <!-- Opinion 1-->
                         <div class="w4box">
                             <p>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -177,6 +218,7 @@
                             </p>
                             <h3>~ Katarzyna</h3>
                         </div>
+                         <!-- Opinion 2-->
                         <div class="w4box">
                             <p>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -186,6 +228,7 @@
                             </p>
                             <h3>~ Julia</h3>
                         </div>
+                         <!-- Opinion 3-->
                         <div class="w4box">
                             <p>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -195,6 +238,7 @@
                             </p>
                             <h3>~ Anna</h3>
                         </div>
+                         <!-- Opinion 4-->
                         <div class="w4box">
                             <p>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -204,6 +248,7 @@
                             </p>
                             <h3>~ Joanna</h3>
                         </div>
+                         <!-- Opinion 5-->
                         <div class="w4box">
                             <p>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -213,6 +258,7 @@
                             </p>
                             <h3>~ Kamil</h3>
                         </div>
+                         <!-- Opinion 6-->
                         <div class="w4box">
                             <p>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -223,6 +269,7 @@
                             <h3>~Rafał</h3>
                         </div>
                     </div>
+                     <!-- Dots at the bottom-->
                     <div class="w4dots">
                         <div class="dot" id="dot1"></div>
                         <div class="dot" id="dot2"></div>
@@ -233,45 +280,64 @@
                 <div class="w4spacer2"></div>
             </div>            
         </div>
+        <!--
+
+        ***WRAPPER5/Contact***
+
+    -->
         <div class="wrapper5">
+            <!-- Contact thinks -->
             <div class="w5content">
                 <h1><a>YAMAHA</a> Szkoła Muzyczna</h1>
                 <div class="w5container">
+                    <!-- contact 1-->
                     <div class="box">
                         <h2><a>Adres 1</a>(Smoczka):</h2><br>
                         <h3>ul. Wolności 146A/2<br>
                             39-300 Mielec</h3>
                     </div>
+                    <!-- contact 2-->
                     <div class="box">
                         <h2><a>Adres 2</a>(Osiedle):</h2><br>
                         <h3>Al. Niepodległości 14/42<br>
                             39-300 Mielec</h3>
                     </div>
+                    <!-- contact 3-->
                     <div class="box">
                         <h2><a>Telefon</a>:</h2><br>
                         <h3><a href="tel:+48530740070">530 740 070</a></h3>
                     </div>
+                    <!-- contact 4-->
                     <div class="box">
                         <h2><a>E-mail</a>:</h2><br>
                         <h3>yamahamielec@gmail.com</h3>
                     </div>
                 </div>
             </div>
+            <!-- Social section in contact-->
             <div class="w5socials">
                 <h2>Odwiedź nas!</h2>
                 <div class="w5socialbar">
+                    <!-- Social 1-->
                     <div class="w5icon">
                         <a href="#"><img src="img/icons/facebook.png" alt=""></a>
                     </div>
+                    <!-- Social 2-->
                     <div class="w5icon">
                         <a href="#"><img src="img/icons/instagram.png" alt=""></a>
                     </div>
+                    <!-- Social 3-->
                     <div class="w5icon">
                        <a href="#"><img src="img/icons/youtube.png" alt=""></a> 
                     </div>
                 </div>
             </div>
         </div>
+        <!--
+
+        ***WRAPPER6/Footer***
+
+    -->
         <div class="wrapper6">
             <h2>Created by <a href="#">SPP_WEB</a></h2>
         </div>
