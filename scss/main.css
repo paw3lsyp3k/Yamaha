@@ -763,8 +763,7 @@ nav ul li a {
   }
   .wrapper2 {
     height: 32vmax;
-    background: linear-gradient(-3deg, #9c88ff 15%, rgba(0, 0, 0, 0) 15.7%);
-    background: yellowgreen;
+    background: linear-gradient(-3deg, #9c88ff 15%, rgba(0, 0, 0, 0) 15.4%);
   }
   .wrapper2 #w2content {
     width: 90%;
@@ -776,6 +775,50 @@ nav ul li a {
   }
   .wrapper2 #w2content .w2box .counter {
     font-size: 3.5vmax;
+  }
+  .wrapper3 {
+    background: linear-gradient(-2deg, #292929 4%, rgba(0, 0, 0, 0) 4.1%);
+  }
+  .wrapper3 h1 {
+    width: 90%;
+    font-size: 2.4vmax;
+  }
+  .wrapper3 .w3container {
+    width: 75%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+    padding-bottom: 55%;
+  }
+  .wrapper3 .w3container .w3box {
+    width: 100%;
+    height: 18vmax;
+  }
+  .wrapper3 .w3container .w3box .w3content {
+    width: 100%;
+    height: 98%;
+  }
+  .wrapper3 .w3container .w3box .w3content .w3icon {
+    width: 7vmax;
+    height: 11vmax;
+  }
+  .wrapper3 .w3container .w3box .w3content h3 {
+    width: 90%;
+    text-align: center;
+    margin: 1vmax auto;
+    font-size: 2vmax;
+  }
+  .wrapper3 h2 {
+    width: 70%;
+    margin: auto;
+    font-size: 2.7vmax;
+    text-align: center;
+  }
+  .wrapper3 .w3button {
+    width: 25%;
+    padding: 2vmax 8vmax;
+    margin: 2vmax auto;
+    font-size: 1.5vmax;
   }
 }
 /*# sourceMappingURL=main.css.map */
