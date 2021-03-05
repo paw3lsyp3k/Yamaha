@@ -709,4 +709,35 @@ nav ul li a {
     font-size: 1.5vmax;
   }
 }
+#mobilehide{
+  display: none;
+}
+.wrapper4{
+  padding-top: 3vmax;
+  height: 50vmax;
+  background: linear-gradient(-2deg, $maincolor 8%, rgba(0, 0, 0, 0) 8.4%);
+  background-color: #292929;
+  h1{
+    font-size: 2.5vmax;
+  }
+  .w4container{
+    height: 30vmax;
+    width: 80%;
+    .w4section{
+      height: 100%;
+      .w4content{
+        width: 160vmax;
+        .w4box{
+          width: 35vmax;
+          p{
+            font-size: 1.7vmax;
+          }
+          h3{
+            font-size: 2vmax;
+          }
+        }
+      }
+    }
+  }
+}
 }

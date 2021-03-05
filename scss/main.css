@@ -820,5 +820,36 @@ nav ul li a {
     margin: 2vmax auto;
     font-size: 1.5vmax;
   }
+  #mobilehide {
+    display: none;
+  }
+  .wrapper4 {
+    padding-top: 3vmax;
+    height: 50vmax;
+    background: linear-gradient(-2deg, #9c88ff 8%, rgba(0, 0, 0, 0) 8.4%);
+    background-color: #292929;
+  }
+  .wrapper4 h1 {
+    font-size: 2.5vmax;
+  }
+  .wrapper4 .w4container {
+    height: 30vmax;
+    width: 80%;
+  }
+  .wrapper4 .w4container .w4section {
+    height: 100%;
+  }
+  .wrapper4 .w4container .w4section .w4content {
+    width: 160vmax;
+  }
+  .wrapper4 .w4container .w4section .w4content .w4box {
+    width: 35vmax;
+  }
+  .wrapper4 .w4container .w4section .w4content .w4box p {
+    font-size: 1.7vmax;
+  }
+  .wrapper4 .w4container .w4section .w4content .w4box h3 {
+    font-size: 2vmax;
+  }
 }
 /*# sourceMappingURL=main.css.map */
