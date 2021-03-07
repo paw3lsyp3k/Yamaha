@@ -722,13 +722,15 @@ nav ul li a {
   }
   .w4container{
     height: 30vmax;
-    width: 80%;
+    width: 60vmax;
     .w4section{
       height: 100%;
+      width: 50vmax;
       .w4content{
-        width: 160vmax;
+        width: 145vmax;
+        justify-content: space-around;
         .w4box{
-          width: 35vmax;
+          width: 30%;
           p{
             font-size: 1.7vmax;
           }
@@ -740,4 +742,112 @@ nav ul li a {
     }
   }
 }
+.wrapper5{
+  height: 60vmax;
+  .w5content {
+    float: unset;
+    width: 100%;
+    height: 65%;
+    padding: 5% 0;
+    h1 {
+      font-size: 3.5vmax;
+      text-align: center;
+    }
+    .w5container{
+      width: 90%;
+      margin: 7vmax auto;
+
+      .box{
+        text-align: center;
+      }
+      .box h2{
+        font-size:2.4vmax;
+      }
+      .box h3{
+        font-size: 1.8vmax;
+      }
+    }
+  }
+  .w5socials{
+    width: 100%;
+    height: 30%;
+    float: unset;
+    h2 {
+      font-size: 3vmax; 
+    }
+    .w5socialbar {
+      width: 24vmax;
+      height: 4vmax;
+      .w5icon {
+        width: 4vmax;
+        height: 4vmax;
+    }
+  }
+}
+}
+.wrapper6{
+  height: 6vmax;
+  h2{
+    line-height: 6vmax;
+  }
+}
+}
+
+@media screen and (max-width: 550px) {
+#wrapper1 #w1content h1{
+  font-size: 7vmax;
+}
+#wrapper1 #w1content h2{
+  font-size: 2vmax;
+}
+.wrapper3{
+  width: 100%;
+  h1{
+    font-size: 2vmax;
+    font-weight: 500;
+  }
+    .w3container{
+      width: 90%;
+      margin: auto;
+      grid-gap: 5%;
+      padding-bottom: 45%;
+      .w3box .w3content h3{
+        font-size: 1.6vmax;
+      }
+    }
+  }
+  .wrapper4 {
+    display: none;
+  }
+  .wrapper5{
+    height: unset;
+    .w5content{
+      padding-bottom: unset;
+      h1{
+        font-size: 3vmax;
+      }
+      .w5container{
+        grid-template-columns: 1fr;
+        .box{
+          padding-top: 2vmax;
+        }
+        .box h2{
+          font-size: 2.8vmax;
+        }
+        .box h3{
+          font-size: 2.1vmax;
+        }
+      }
+    }
+    .w5socials{
+      padding: 0 0 10%;
+      h2{
+        font-size: 4vmax;
+        color: black;     
+       }
+    }
+  }
+  .wrapper6 h2{
+    font-size: 2.5vmax;
+  }
 }
