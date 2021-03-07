@@ -927,8 +927,15 @@ nav ul li a {
   .wrapper3 .w3container .w3box .w3content h3 {
     font-size: 1.6vmax;
   }
-  .wrapper4 {
-    display: none;
+  .wrapper4 .w4container {
+    width: 45vmax;
+    height: unset;
+  }
+  .wrapper4 .w4container .w4section {
+    width: 35vmax;
+  }
+  .wrapper4 .w4container .w4section .w4content {
+    width: 100vmax;
   }
   .wrapper5 {
     height: unset;

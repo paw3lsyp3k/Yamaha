@@ -816,8 +816,15 @@ nav ul li a {
       }
     }
   }
-  .wrapper4 {
-    display: none;
+  .wrapper4 .w4container{
+    width: 45vmax;
+    height: unset;
+    .w4section{
+      width: 35vmax;
+      .w4content{
+        width: 100vmax;
+      }
+    }
   }
   .wrapper5{
     height: unset;
