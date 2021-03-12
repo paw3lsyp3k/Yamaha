@@ -66,9 +66,9 @@ Wrapper1
 }
 
 .wrapper1 .w1content .w1container .w1contact .w1adres {
-  padding: 3vmax 1vmax;
+  padding-top: 10%;
   width: 100%;
-  height: 10vmax;
+  height: unset;
 }
 
 .wrapper1 .w1content .w1container .w1contact .w1adres h2 {
@@ -112,5 +112,11 @@ Wrapper1
 .footer h2 a {
   color: white;
   text-decoration: none;
+}
+
+@media screen and (orientation: portrait) {
+  .wrapper1 {
+    background: yellow;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
