@@ -118,5 +118,14 @@ Wrapper1
   .wrapper1 {
     background: orange;
   }
+  .wrapper1 .w1content {
+    background: pink;
+  }
+  .wrapper1 .w1content .w1container {
+    background: darkblue;
+  }
+  .wrapper1 .w1content .w1container .w1contact {
+    background: darkcyan;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
