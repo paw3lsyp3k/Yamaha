@@ -27,6 +27,10 @@ nav ul li a{
 Wrapper1
 */
 
+.contacttitle{
+  display: none;
+}
+
 .wrapper1{
   width: 100%;
   height: 100vh;
@@ -94,16 +98,66 @@ Wrapper1
 }
 
 @media screen and (orientation: portrait) {
+  .contacttitle{
+    display: block;
+    text-align: center;
+    padding-top: 5vmax;
+    font-size: 6vmax;
+    font-weight: 500;
+  }
   .wrapper1 {
-    background: orange;
+    background: white;
     .w1content{
-      background: pink;
+      height: 75%;
       .w1container{
-        background: darkblue;
+        width: 90vmin;
+        border: none; 
         .w1contact{
-          background: darkcyan;
+          width: 90%;
+          float: none;
+          margin: auto;
+          
+          .w1adres h2{
+            font-size: 3.8vmax;
+            text-align: center;
+          }
+          .w1adres p{
+            font-size: 2vmax;
+            text-align: center;
+          }
+          .w1socials{
+            font-size: 4vmax;
+            text-align: center;
+          }
         }
       }
     }
   }
+}
+
+@media screen and (orientation: portrait) and (max-width: 550px) {
+.wrapper1 .w1content{
+  height: 80%;
+  .w1container{
+    width: 96vmin;
+    .w1contact{
+      width: 100%;
+      .w1adres h2{
+        font-size: 3.3vmax;
+        text-align: center;
+      }
+      .w1adres p{
+        font-size: 1.5vmax;
+        text-align: center;
+      }
+    }
+  }
+}
+.footer{
+  height: 4vmax;
+  h2{
+    line-height: 4vmax;
+    font-size: 1.8vmax;
+  }
+}
 }
